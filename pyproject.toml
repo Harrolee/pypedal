@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pedal"
+version = "0.0.1"
+description = "workshop for building bass guitar effects"
+authors = ["Lee Harrold <lhharrold@sep.com>"]
+license = "ISC"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyo = "^1.0.4"
+
+[tool.poetry.scripts]
+load_hex = {reference = "/my_shell_command.sh", type = "file"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
